@@ -1,8 +1,9 @@
 import './style.css';
 
-export const MenuItem = ({ text, onSelect }) => {
+export const MenuItem = ({ text, onSelect, page }) => {
   const handleSelectItem = () => {
     onSelect(false);
+    page(text);
   };
 
   return (
